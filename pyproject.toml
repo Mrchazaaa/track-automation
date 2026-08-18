@@ -1,0 +1,19 @@
+[project]
+name = "track-automation"
+version = "0.1.0"
+description = "Download audio tracks and separate stems with LALAL.AI."
+authors = [
+    {name = "Track Automation contributors"}
+]
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "requests (>=2.31,<3.0)"
+]
+
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

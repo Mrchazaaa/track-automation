@@ -13,7 +13,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
       - name: Install dependencies
-        run: python -m pip install -r requirements.txt
+        run: poetry install --no-interaction
       - name: Run tests
-        run: python -m unittest discover -s tests -v
+        run: poetry run python -m unittest discover -s tests -v
