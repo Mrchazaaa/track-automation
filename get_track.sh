@@ -23,5 +23,5 @@ python3 ./TrackSeparation.py --input-file "./tracks/$FILENAME/$FILENAME.mp3" --a
 echo "Stems separated"
 
 echo "Converting to TM2 format"
-ffmpeg -i "./tracks/$FILENAME/${FILENAME}_no_drums_no_vocals.mp3" -acodec pcm_s16le -ar 44100 -ac 2 "$FILENAME/${FILENAME}_no_drums_no_vocals_tm2ready.wav"
+ffmpeg -i "./tracks/$FILENAME/${FILENAME}_no_drums_no_vocals.mp3" -acodec pcm_s16le -ar 44100 -ac 2 "./tracks/$FILENAME/${FILENAME}_no_drums_no_vocals_tm2ready.wav"
 echo "Conversion complete"
