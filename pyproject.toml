@@ -10,6 +10,9 @@ dependencies = [
     "requests (>=2.31,<3.0)"
 ]
 
+[project.scripts]
+track-automation = "track_automation.cli:main"
+
 
 [tool.poetry]
 package-mode = false
